@@ -1,0 +1,134 @@
+/* Réinitialisation */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #222;
+    background-color: #f4f7fb;
+}
+
+/* En-tête */
+header {
+    background-color: #172554;
+    color: white;
+    padding: 20px 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+header h1 {
+    font-size: 24px;
+}
+
+nav {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #93c5fd;
+}
+
+/* Section principale */
+.hero {
+    min-height: 400px;
+    padding: 80px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: linear-gradient(135deg, #2563eb, #7c3aed);
+    color: white;
+}
+
+.hero h2 {
+    font-size: clamp(28px, 5vw, 42px);
+    margin-bottom: 15px;
+}
+
+.hero p {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+/* Bouton */
+.btn {
+    display: inline-block;
+    background-color: white;
+    color: #2563eb;
+    padding: 12px 28px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: transform 0.3s, background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #dbeafe;
+    transform: translateY(-3px);
+}
+
+/* Sections de contenu */
+.content {
+    max-width: 900px;
+    margin: 30px auto;
+    padding: 35px 25px;
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.06);
+}
+
+.content h2 {
+    color: #1d4ed8;
+    margin-bottom: 15px;
+}
+
+/* Pied de page */
+footer {
+    margin-top: 50px;
+    padding: 25px;
+    background-color: #172554;
+    color: white;
+    text-align: center;
+}
+
+/* Adaptation aux téléphones */
+@media (max-width: 600px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav {
+        justify-content: center;
+    }
+
+    .hero {
+        min-height: 350px;
+        padding: 50px 20px;
+    }
+
+    .content {
+        margin: 20px 15px;
+    }
+}
